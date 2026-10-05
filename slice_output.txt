@@ -171,7 +171,7 @@ Precision: 1.0000 | Recall: 1.0000 | F1: 1.0000
 native-country: Mexico, Count: 111
 Precision: 1.0000 | Recall: 0.3333 | F1: 0.5000
 native-country: Nicaragua, Count: 11
-Precision: 0.0000 | Recall: 0.0000 | F1: 0.0000
+Precision: 0.0000 | Recall: 0.0000 | F1: 1.0000
 native-country: Outlying-US(Guam-USVI-etc), Count: 4
 Precision: 1.0000 | Recall: 1.0000 | F1: 1.0000
 native-country: Peru, Count: 7
