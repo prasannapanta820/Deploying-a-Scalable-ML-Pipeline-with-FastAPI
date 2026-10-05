@@ -3,7 +3,7 @@
 For additional information see the Model Card paper: https://arxiv.org/pdf/1810.03993.pdf
 
 ## Model Details
-This model is a scikit-learn `RandomForestClassifier` (version 1.5.1) built for the Udacity project "Deploying a Scalable ML Pipeline with FastAPI." It uses 100 trees with a maximum depth of 16, a minimum of 20 samples to split a node, and `random_state=42` so results are reproducible. Categorical features are one-hot encoded with a `OneHotEncoder` (unknown categories are ignored), and the label is binarized with a `LabelBinarizer`. The trained model and encoder are saved as `model/model.pkl` and `model/encoder.pkl` and served through a FastAPI application (`main.py`).
+This model is a scikit-learn `RandomForestClassifier` (scikit-learn 1.3.2, Python 3.8) built for the Udacity project "Deploying a Scalable ML Pipeline with FastAPI." It uses 100 trees with a maximum depth of 16, a minimum of 20 samples to split a node, and `random_state=42` so results are reproducible. Categorical features are one-hot encoded with a `OneHotEncoder` (unknown categories are ignored), and the label is binarized with a `LabelBinarizer`. The trained model and encoder are saved as `model/model.pkl` and `model/encoder.pkl` and served through a FastAPI application (`main.py`).
 
 ## Intended Use
 The model predicts whether a person's annual income is above or below $50K based on demographic and employment attributes from the U.S. Census. It is intended for learning and demonstration purposes: practicing ML pipelines, slice-based evaluation, unit testing, CI, and API deployment. It should not be used to make real decisions about individuals, such as hiring, lending, insurance, or benefit eligibility.
